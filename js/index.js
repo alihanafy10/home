@@ -1,43 +1,18 @@
-let windowWidth;
+
 const mediaQuery = window.matchMedia("(max-width: 768px)");
-$(window).resize(function () {
-  windowWidth = $(this).width();
-  //nav
-  if (windowWidth <= 768) {
-    $("nav ul li").removeClass("me-2");
-    $("nav ul li a p").addClass("d-none");
-  } else {
-    $("nav ul li").addClass("me-2");
-    $("nav ul li a p").removeClass("d-none");
-  }
-  
-});
- if (mediaQuery.matches) {
-   $("nav ul li").removeClass("me-2");
-   $("nav ul li a p").addClass("d-none");
- } else {
-   $("nav ul li").addClass("me-2");
-   $("nav ul li a p").removeClass("d-none");
- }
+
 //news
-let news = ["الحرب على غزة #", "اعتزال الاسطورة ميسي", "مباراة الاهلى اليوم"];
+let news = ["# الحرب على غزة", "اعتزال الاسطورة ميسي", "مباراة الاهلى اليوم"];
 let pin = 0;
 let timerId;
 
 $(window).resize(function () {
   if ($(this).width() <= 768) {
-    $("#btnUp").removeClass("d-none");
-    $("#btnDown").removeClass("d-none");
-    $("#dataNews").removeClass("d-none");
     minResize();
-  } else {
-    maxResize();
-  }
+  } 
 });
 
 function minResize() {
-  $("#mark").addClass("d-none");
-
   clearInterval(timerId); // إيقاف المؤقت  (لو كان شغال)
 
   interval();
@@ -55,18 +30,10 @@ function minResize() {
   });
 }
 
-function maxResize() {
-  $("#btnUp").addClass("d-none");
-  $("#btnDown").addClass("d-none");
-  $("#dataNews").addClass("d-none");
-  $("#mark").removeClass("d-none");
-}
 
 if (mediaQuery.matches) {
   minResize();
-} else {
-  maxResize();
-}
+} 
 
 function interval() {
   timerId = setInterval(function () {
