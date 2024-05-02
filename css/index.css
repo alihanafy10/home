@@ -49,7 +49,7 @@ body{
 }
 .mainHome{
     padding-bottom: 16px;
-    border-radius: 40px 40px 0 0;
+    /* border-radius: 40px 40px 0 0; */
     background: var(--fff-color);
 }
 /* start nav*/
@@ -421,7 +421,7 @@ background-image: linear-gradient(to bottom, #ffe8d6, #ffebe7, #fff1f5, #fef9fd,
 }
 .newBCast >div{
     background-color: var(--main-color-11);
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0;
 }
 .newBCast >div .parent-svg{
     background-color: var(--main-color-2);
