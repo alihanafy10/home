@@ -314,20 +314,17 @@ border-radius: 16px;
 margin-bottom: 16px;
 margin-left: auto;
 }
-.interaction >div >h2{
+.interaction >div a >h2{
 font-size: 16px;
 font-weight: 700;
-width: 100%;
-text-align: end;
 margin: 0;
 }
-.interaction >div >p{
+.interaction >div a >p{
     margin: 8px 0 32px;
-    text-align: end;
     color: var(--gray-blue, #5D5C64);
 font-size: 12px;
 font-weight: 400;
-width: 100%;
+
 }
 @media (min-width: 768px){
     .interaction >div img{
@@ -350,7 +347,7 @@ border-radius: 16px;
     color: black;
 }
 .under-content h2{
-text-align: right;
+
 font-size: 14px;
 font-weight: 700;
 line-height: 150%; /* 21px */
@@ -359,7 +356,7 @@ line-height: 150%; /* 21px */
     color: var(--gray-blue, #5D5C64);
 font-size: 12px;
 font-weight: 400;
-text-align: right;
+
 line-height: 150%;
 }
 .under-content >div .imge >div{
