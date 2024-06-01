@@ -444,8 +444,9 @@ background-image: linear-gradient(to bottom, #ffe8d6, #ffebe7, #fff1f5, #fef9fd,
 }
 /* footer         Edit June*/
 footer{
-    margin: 42px 0 32px;
+    padding: 42px 0 32px;
     position: relative;
+    background-color: white;
 }
 footer::before{
     position: absolute;
@@ -453,7 +454,7 @@ footer::before{
     height: 1px;
     width: calc(100% - 105px);
     background-color: #80C7D9;
-    top: 0;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
 }
