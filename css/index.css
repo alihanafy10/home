@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 /*my classes*/
+ .a-img{
+    margin-left: auto;
+}
+@media (max-width: 768px){
+    .a-img{
+    width: 100%;
+} 
+}
+
 .end-flex{
      display: flex;
 
@@ -307,13 +316,15 @@ margin: 0;
 .interaction >div .parent-svg{
     background-color:var(--main-color-3);
 }
+
 .interaction >div .main-img{
 width: 315px;
-height: 194px;
+
 border-radius: 16px;
 margin-bottom: 16px;
-margin-left: auto;
+
 }
+
 .interaction >div a >h2{
 font-size: 16px;
 font-weight: 700;
@@ -423,7 +434,7 @@ background-image: linear-gradient(to bottom, #ffe8d6, #ffebe7, #fff1f5, #fef9fd,
 }
 .newBCast >div{
     background-color: var(--main-color-11);
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px ;
 }
 .newBCast >div .parent-svg{
     background-color: var(--main-color-2);
@@ -431,3 +442,46 @@ background-image: linear-gradient(to bottom, #ffe8d6, #ffebe7, #fff1f5, #fef9fd,
 .newBCast >div .imge div::before{
     border-color: var(--main-color-11);
 }
+/* footer         Edit June*/
+footer{
+    margin: 42px 0 32px;
+    position: relative;
+}
+footer::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: calc(100% - 105px);
+    background-color: #80C7D9;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer ul{
+margin-top: 20px;
+}
+footer li{
+    position: relative;
+}
+footer a{
+    color: #F5B078;
+}
+footer ul li{
+    padding: 0 8px;
+}
+footer ul li:not(:last-child)::before{
+    position: absolute;
+    content: "";
+    height: 30%;
+    width: 1px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:#80C7D9 ;
+}
+footer a,footer p{
+    font-size: 12px;
+font-weight: 400;
+line-height: 250%;
+}
+
